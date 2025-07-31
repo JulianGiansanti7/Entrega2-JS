@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    height: 100vh;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    background-color: rgb(185, 185, 185);
+}
+
+#turnosForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#turnosForm button{
+    padding: 4px;
+}
+
+#turnosForm button:hover{
+    cursor: pointer;
+}
