@@ -1,4 +1,4 @@
-let turnos = [];
+let turnos = JSON.parse(localStorage.getItem("turnos")) || [];
 
 let ultimoId = 1;
 
@@ -15,6 +15,7 @@ function nuevoTurno (){
     }
 
     turnos.push(turno);
+    localStorage.setItem('turnos', JSON.stringify(turnos));
     alert('El turno ha sido asignado con exito!');
 }
 
@@ -39,3 +40,4 @@ function mostrarTurnos(){
         turnosLista.appendChild(div);
     })
 }
+mostrarTurnos()
